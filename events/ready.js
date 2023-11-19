@@ -17,6 +17,12 @@ module.exports = {
                 ]
             });
 
+            db.query(`CREATE TABLE IF NOT EXISTS users (
+                userId VARCHAR(20) NOT NULL,
+                permissionLevel INT NOT NULL DEFAULT 0,
+                PRIMARY KEY (userId)
+            )`);
+
         
         } catch (error) {
             log.error(error);

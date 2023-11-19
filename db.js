@@ -18,5 +18,4 @@ db.getConnection()
         log.error(err);
     });
 
-
 module.exports = db;

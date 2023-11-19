@@ -1,4 +1,3 @@
-const djs = require('discord.js');
 const client = require('./client');
 const log = require('./logger');
 require('dotenv').config();
